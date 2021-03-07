@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 90%;
+}
+
+.color-btn {
+  margin-top: 0.5rem;
+  color: var(--text-light);
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 40px 40px var(--primary-color) inset, 0 0 0 0 rgb(12, 6, 59);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  width: 90%;
+  height: 3rem;
+  max-width: 10rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0.6rem;
+}
+
+.color-btn:hover {
+  box-shadow: 0 0 10px 0 var(--primary-color) inset,
+    0 0 10px 4px var(--primary-color);
+}
+
+.alert-box {
+  position: absolute;
+  top: 1rem;
+  background-color: var(--alert-color);
+  font-weight: 500;
+  border: 2px solid #000;
+  padding: 1.7rem 0.5rem;
+  width: 80%;
+  max-width: 8rem;
+  margin: 0.5rem;
+  -webkit-box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.22);
+}
+
+.alert-box .close {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  width: 1.4rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+
+.alert-box .close:hover {
+  background-color: rgb(230, 40, 5);
+}
+
+.alert-box .close img {
+  border-radius: 0.2rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-blue {
+  background-color: #c7dcf7;
+}
+
+.bg-green {
+  background-color: #3b3;
+}
